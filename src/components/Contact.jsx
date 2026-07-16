@@ -51,10 +51,9 @@ export default function Contact() {
             setLoading(true);
 
             await axios.post(
-                "https://jsonplaceholder.typicode.com/posts",
+                "https://dummyjson.com/messages/add",
                 formData
             );
-
             setStatus({
                 type: "success",
                 message: "Message sent successfully!",
