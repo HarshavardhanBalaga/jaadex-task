@@ -1,16 +1,222 @@
-# React + Vite
+# Interactive Product Landing Page
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A modern, responsive product landing page built as a frontend assignment using **React**, **Tailwind CSS v4**, **GSAP**, **Three.js**, **Redux Toolkit**, and **Axios**.
 
-Currently, two official plugins are available:
+## Live Demo
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+**View the deployed project here:**
+🔗 https://jaadex-task.netlify.app/
 
-## React Compiler
+---
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## Overview
 
-## Expanding the ESLint configuration
+This project demonstrates the implementation of a premium landing page with a focus on:
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+* Clean component architecture
+* Responsive design
+* Reusable UI components
+* Smooth GSAP animations
+* Interactive Three.js integration
+* State management using Redux Toolkit
+* API integration using Axios
+
+The overall design follows an **Industrial Minimalism** approach with subtle animations and a performance-first implementation.
+
+---
+
+## Tech Stack
+
+* React (Vite)
+* Tailwind CSS v4
+* GSAP
+* ScrollTrigger
+* Three.js
+* @react-three/fiber
+* @react-three/drei
+* Redux Toolkit
+* Axios
+
+---
+
+## Features
+
+* Responsive navigation
+* Animated Hero section
+* Interactive 3D metallic sphere
+* GSAP-powered scroll animations
+* About section
+* Features section
+* Experience showcase
+* Testimonials marquee
+* Contact form with Axios integration
+* Minimal industrial footer
+* Reusable button component
+* Mobile-friendly layout
+
+---
+
+## Project Structure
+
+```text
+src
+│
+├── assets
+│   └── models
+│       └── sphere.glb
+│
+├── animations
+│   ├── experienceAnimation.js
+│   ├── featuresAnimation.js
+│   ├── heroAnimation.js
+│   ├── marquee.js
+│   └── studioAnimation.js
+│
+├── components
+│   ├── Navbar.jsx
+│   ├── Hero.jsx
+│   ├── About.jsx
+│   ├── Features.jsx
+│   ├── Experience.jsx
+│   ├── Testimonials.jsx
+│   ├── Contact.jsx
+│   ├── Footer.jsx
+│   ├── Scene.jsx
+│   ├── SphereModel.jsx
+│   ├── Button.jsx
+│   ├── Marquee.jsx
+│   └── TestimonialCard.jsx
+│
+├── redux
+│   ├── appSlice.js
+│   └── store.js
+│
+├── App.jsx
+├── main.jsx
+└── index.css
+```
+
+---
+
+## Folder Guide
+
+### assets/
+
+Contains static project assets such as the 3D model used in the Hero section.
+
+---
+
+### components/
+
+Contains all reusable UI components.
+
+Examples include:
+
+* Navigation
+* Hero
+* About
+* Features
+* Experience
+* Testimonials
+* Contact Form
+* Footer
+* Three.js Scene
+* Reusable Button
+
+---
+
+### animations/
+
+Each section has its own animation file.
+
+This keeps the code modular and makes future maintenance easier.
+
+---
+
+### redux/
+
+Contains Redux Toolkit store configuration and application state management.
+
+---
+
+## Installation
+
+Clone the repository
+
+```bash
+git clone <repository-url>
+```
+
+Move into the project
+
+```bash
+cd <project-folder>
+```
+
+Install dependencies
+
+```bash
+npm install
+```
+
+Start the development server
+
+```bash
+npm run dev
+```
+
+Build for production
+
+```bash
+npm run build
+```
+
+Preview production build
+
+```bash
+npm run preview
+```
+
+---
+
+## Contact Form
+
+The contact form demonstrates API integration using Axios.
+
+For demonstration purposes it sends a dummy POST request to:
+
+```
+https://jsonplaceholder.typicode.com/posts
+```
+
+---
+
+## Design Philosophy
+
+* Industrial Minimalism
+* Responsive-first development
+* Reusable components
+* Clean architecture
+* Performance-oriented animations
+* Subtle interactions
+* Maintainable codebase
+
+---
+
+## Learning Objectives
+
+This project was created to demonstrate practical experience with:
+
+* Component-based architecture
+* Responsive layouts
+* GSAP animations
+* Three.js integration
+* Redux Toolkit
+* Axios API requests
+* Modern frontend development practices
+
+---
+
+## License
+
+This project is intended for educational and demonstration purposes.
